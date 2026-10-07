@@ -4,10 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>External Style Sheet Example</title>
-  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <style>
+    /* Element Selector */
+    p {
+        color: green;
+    }
+    /* ID selector */
+    #intro{
+        color: blue;
+    }
+    /* Class selector */
+    .note{
+        color: red;
+    }
+  </style>
 </head>
 <body>
   <h1>This is a heading</h1>
-  <p>This is a paragraph with external styles applied.</p>
+  <p id="intro" class="note" >Hello CSS! This is a paragraph with external styles applied</p>
+
+  <p style="color:blueviolet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem minus maxime totam magni repudiandae
+    recusandae, doloribus soluta natus animi, exercitationem aut reiciendis perferendis consequuntur, iusto dolores
+    tenetur eveniet ad quasi vel. Consequuntur facere voluptatum praesentium tenetur ullam delectus, odit esse enim, culpa
+    nemo reprehenderit tempore laborum cupiditate deserunt assumenda!</p>
+    <p id="intro"> This is another paragraph.</p>
 </body>
 </html>
