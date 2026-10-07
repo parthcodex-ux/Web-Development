@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>External Style Sheet Example</title>
   <!-- <link rel="stylesheet" href="./style.css"> -->
   <style>
+    /* universal selector */
+    * {
+      background-color: lightgray;
+    }
+
     /* Element Selector */
-    p {
-        color: green;
-        border: 2px solid black;
-        padding: 10px;
-        margin: 20px;
+
+    .box {
+      border: 2px solid black;
+      padding: 20px;
+      margin: 20px;
+      width: 97%;
+      height: 100px;
+      box-sizing: border-box;
     }
-    .box{
-        border: 2px solid black;
-        padding: 20px;
-        margin: 20px;
-        width: 97%;
-        height: 100px;
-        box-sizing: border-box;
-    }
+
     /* ID selector */
-    #intro{
-        color: blue;
+    #intro {
+      color: orange;
+      background-color: brown;
     }
+
     /* Class selector */
-    .note{
-        color: red;
+    .note {
+      color: red;
     }
+
+    p {
+      color: green;
+      border: 2px solid black;
+      padding: 10px;
+      margin: 20px;
+    }
+
+   
+   /*  div>p{
+     color: blue;
+    } */
+      div p{
+     color: blue;
+    }
+       /* div + p{
+     color: blue;
+    } */
   </style>
 </head>
+
 <body>
   <h1 class="box">This is a heading</h1>
-  <p id="intro" class="note" >Hello CSS! This is a paragraph with external styles applied</p>
+  <p id="intro" class="note">Hello CSS! This is a paragraph with external styles applied</p>
 
-  <p style="color:blueviolet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem minus maxime totam magni repudiandae
+  <p style="color:blueviolet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem minus
+    maxime totam magni repudiandae
     recusandae, doloribus soluta natus animi, exercitationem aut reiciendis perferendis consequuntur, iusto dolores
-    tenetur eveniet ad quasi vel. Consequuntur facere voluptatum praesentium tenetur ullam delectus, odit esse enim, culpa
+    tenetur eveniet ad quasi vel. Consequuntur facere voluptatum praesentium tenetur ullam delectus, odit esse enim,
+    culpa
     nemo reprehenderit tempore laborum cupiditate deserunt assumenda!</p>
-    <p id="intro"> This is another paragraph.</p>
+  <p id="intro"> This is another paragraph.</p>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur consequatur aut saepe laboriosam explicabo
+      expedita a cum quidem sit sequi facere, porro perferendis impedit ex similique vel neque voluptate dignissimos
+      quaerat quis eius eos! Repellat, et. Enim, alias quibusdam.</p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, adipisci. Libero, beatae. Ea reprehenderit neque
+        placeat enim officiis pariatur perferendis eius! Voluptates ducimus est quia amet reprehenderit nobis ab
+        perspiciatis velit dolorum laboriosam voluptas assumenda molestiae cupiditate animi, laborum iure!
+      </p>
+      <span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis repudiandae sapiente sequi iure magni
+          quos accusamus qui quia minima.</p>
+      </span>
+    </div>
+  </div>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor odit illum mollitia minus nam enim ab eos,
+    similique ducimus itaque maxime, nulla facilis rerum voluptatum.</p>
 </body>
+
 </html>
