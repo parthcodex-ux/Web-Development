@@ -20,17 +20,54 @@
         a{
             text-decoration: none;
         }
-    </style>
+        .container         { 
+            line-height: 1.5;
+         }
+        .large-line-height {
+             line-height: 2;
+             }  
+             body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+        font-family: "Times New Roman", Times, serif;
+        }
+        body        { font-size: 16px; }  /* base size */
+        h1          { font-size: 2em; }   /* 2 × 16 = 32px */
+        p           { font-size: 14px; }  /* fixed 14px */
+        .small-text { font-size: 80%; }   /* 80% of parent's size */
+        .normal-text  { font-style: normal; }
+        .italic-text  { font-style: italic; }
+        .oblique-text { font-style: oblique; }
+        .normal-text { font-weight: normal; }
+        .bold-text   { font-weight: bold; }
+        .bolder-text { font-weight: bolder; }
+                </style>
 </head>
 
 <body>
-    <h2 class="style-heading"> Learning Text Properties</h2>
+    <h1 class="style-heading"> Learning Text Properties</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, sit iusto? Sit, veritatis nemo deserunt illo vel,
         facere ullam maxime maiores voluptatem optio sequi id magnam. Corrupti dolor magni corporis? Eum optio ducimus
         maxime accusantium libero at temporibus id ratione. Ullam voluptate nemo quae alias repudiandae veniam tempore,
         harum tenetur!
     </p>
     <a href="https://www.google.com">go to google</a>
+    <div class="container">
+  <p>This is a paragraph with a line height of 1.5 times the font size.</p><br>
+  <p class="large-line-height">This paragraph has a larger line height of 2 times the font size.</p>
+  </div>
+  <h1>This is a Heading</h1>
+  <p>This is some text in the body of the webpage with a specified font size.</p>
+  <p class="small-text">This text is smaller, thanks to the specified font size.</p>
+  <p class="normal-text">This is normal text.</p>
+  <p class="italic-text">This is italic text.</p>
+  <p class="oblique-text">This is oblique text.</p>
+<p class="normal-text">This is normal-weight text.</p>
+<p class="bold-text">This is bold text.</p>
+<p class="bolder-text">This text is bolder than its parent.</p>
+
 </body>
 
 </html>
