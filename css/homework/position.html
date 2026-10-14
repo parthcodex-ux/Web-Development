@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position</title>
     <style>
-        body{
-                overflow:hidden;
+        *{
+                position:fixed;
         }
       .divs{
             position:relative;
 border:4px solid black;
- margin: 0 auto;  
-/* padding:10px 10px; */
+ margin: 0;  
+padding:0;
 width:100vw;
 height:100vh;
 
@@ -82,13 +82,16 @@ bottom:50%;
 font-size: 25px;
 color:red;
         }
-
+img{
+        height:100vh;
+        width: 100vw;
+}
         
     </style>
 </head>
 <body>
     <div class="divs">
-    <img src="/css/homework/photo.jpeg" alt="My Pic" width="100%" height="100%">
+    <img class ="img" src="/css/homework/photo.jpeg" alt="My Pic" width="500" height="1000">
     <div id="name">Parth Singhal</div>
        <div id="name0">Parth Singhal</div>
           <div id="name1">Parth Singhal</div>
